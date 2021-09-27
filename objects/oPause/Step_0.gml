@@ -29,7 +29,7 @@ if(global.gamePaused && room != room_first && room != room_last){
 			option = !option;
 			if(option){
 				instance_create_layer(
-					cx + RES_W_HALF, cy + 225, "LayerFirst", oOption
+					cx + RES_W_HALF, cy + 128, "LayerFirst", oOption
 				);
 			}else{
 				instance_destroy(oOption);

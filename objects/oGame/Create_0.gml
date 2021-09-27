@@ -11,7 +11,7 @@ instance_create_layer(0, 0, layer, oPause);
 instance_create_layer(0, 0, layer, oScore);
 
 //Globals Variable
-global.gameDebug = true;
+global.gameDebug = false;
 global.gamePaused = false;
 global.healPlayer = 0;
 global.tilemapBeam = 0;
