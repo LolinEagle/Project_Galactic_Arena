@@ -1,0 +1,2 @@
+///@desc draw self
+scDrawSpriteExt();

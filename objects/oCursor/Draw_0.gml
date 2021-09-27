@@ -1,0 +1,1 @@
+///@desc Not draw self

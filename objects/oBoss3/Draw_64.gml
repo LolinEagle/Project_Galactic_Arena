@@ -1,0 +1,2 @@
+///@desc Hud Boss
+scHudBoss();

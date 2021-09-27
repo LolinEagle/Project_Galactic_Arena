@@ -1,0 +1,16 @@
+Level1-1 = 100 - 1:40 - snLevel01 - oEnnemieSpawn
+Level1-2 = 100 - 1:40 - snLevel02 - oEnnemieSpawner
+Level1-4 = 120 - 2:00 - snLevel03 - oEnnemieGunner - oEnnemieSpawn
+Level1-5 = 300 - 2:30 - snBoss
+
+Level2-1 = 150 - 2:30 - snLevel04 - oEnnemieHealer - oEnnemieSpawn
+Level2-2 = 180 - 3:00 - snLevel02 - oEnnemieHealer - oEnnemieGunner - oEnnemieSpawner
+Level2-4 = 200 - 3:20 - snLevel03 - oEnnemieHealer - oEnnemieTurret - oEnnemieSpawner
+Level2-5 = 600 - 5:00 - snBoss
+
+Level3-1 = 200 - 3:20 - snLevel01 - oEnnemieRusher - oEnnemieSpawn
+Level3-2 = 240 - 4:00 - snLevel04 - oEnnemieRusher - oEnnemieTurret - oEnnemieSpawner
+Level3-4 = 300 - 5:00 - snLevel05 - oEnnemieRusher - oEnnemieGunner - oEnnemieTurret - oEnnemieSpawn
+Level3-5 = 900 - 7:30 - snFinalBoss
+
+Total = 1590 - 41:30

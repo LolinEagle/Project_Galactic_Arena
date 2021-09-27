@@ -1,0 +1,2 @@
+///@desc Spawner
+spawnFixed = FPS;

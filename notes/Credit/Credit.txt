@@ -1,0 +1,10 @@
+snTitle		= Kalte Ohren - Septahelix
+snBoss		= Are You With Us - Wontolla
+snCredit	= CrazyBoyo
+snEndless	= Kalte Ohren - Alex
+snFinalBoss	= Raindancer - Wontolla
+snLabyrinth	= Kalte Ohren - Septahelix
+snLevel01	= CrazyBoyo
+snLevel02	= Retro Madness - CrazyBoyo
+snLevel04	= Wrong Move - CrazyBoyo
+snLevel05	= Theyre Everywhere - CrazyBoyo

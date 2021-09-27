@@ -1,0 +1,1 @@
+if(drawSelf){draw_self();}

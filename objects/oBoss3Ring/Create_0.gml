@@ -1,0 +1,1 @@
+with(oScore){slowPacifisme = false;}
