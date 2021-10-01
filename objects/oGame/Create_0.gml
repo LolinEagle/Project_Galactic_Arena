@@ -24,6 +24,7 @@ if(!file_exists(OPTION)){
 	global.gameLeft = ord("A");
 	global.gameDown = ord("S");
 	global.gameRight = ord("D");
+	global.gameEndless = false;
 }else{
 	ini_open(OPTION);
 	global.gameOST = ini_read_real("Audio", "OST", 0.5);
@@ -32,5 +33,6 @@ if(!file_exists(OPTION)){
 	global.gameLeft = ini_read_string("Key", "Left", ord("A"));
 	global.gameDown = ini_read_string("Key", "Down", ord("S"));
 	global.gameRight = ini_read_string("Key", "Right", ord("D"));
+	global.gameEndless = ini_read_string("End", "Endless", false);
 	ini_close();
 }

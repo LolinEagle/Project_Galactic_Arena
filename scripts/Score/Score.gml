@@ -17,8 +17,7 @@ function scScore(_targetRoom, _score, _pasiMin, _pasiSec){
 		
 		//Level Ended
 		global.levelEnded = true;
-		global.iLevelEnded++;
-		if(global.iLevelEnded = FPS * 5){
+		if(++global.iLevelEnded = FPS * 5){
 			global.levelEnded = false;
 			global.iLevelEnded = 0;
 			if(global.healPlayer < 100){global.healPlayer = 100;}
@@ -63,9 +62,9 @@ function scScorePacifisme(){
 		var _s0 = "Pacifisme : " + string(global.pacifismMin);
 		var _s1 = string(global.pacifismSec) + " / ";
 		var _s2 = string(pacifismMinToPass) + "." + string(pacifismSecToPass);
-		if(global.pacifismSec < 10){
+		if(global.pacifismSec >= 10){
 			draw_text(RES_W - 8, 48, _s0 + "." + _s1 + _s2);
-		}else{
+		}else if(global.pacifismSec < 10){
 			draw_text(RES_W - 8, 48, _s0 + ".0" + _s1 + _s2);
 		}
 	}

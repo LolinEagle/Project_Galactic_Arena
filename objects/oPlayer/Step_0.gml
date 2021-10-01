@@ -95,6 +95,7 @@ if(!global.gamePaused){
 			room_restart();
 		}else{
 			if(!endless){
+				//Open & Write
 				if(global.theScore > 0){
 					var file = file_text_open_append(SCOREBOARD);
 					file_text_writeln(file);
@@ -102,22 +103,23 @@ if(!global.gamePaused){
 				}else{
 					var file = file_text_open_append(TIMEBOARD);
 					file_text_writeln(file);
-					file_text_write_real(file, global.pacifismMin)
+					file_text_write_real(file, global.pacifismMin);
 				}
 				
 				//Close
 				file_text_close(file);
+				
+				//Level Ended
+				layer_destroy_instances("LayerOther");
+				layer_destroy_instances("LayerEnnemie1");
+				layer_destroy_instances("LayerEnnemie2");
+				layer_destroy_instances("LayerEnnemie3");
+				global.levelEnded = true;
 				endless = true;
 			}
-			
-			//Level Ended
-			layer_destroy_instances("LayerOther");
-			layer_destroy_instances("LayerEnnemie1");
-			layer_destroy_instances("LayerEnnemie2");
-			layer_destroy_instances("LayerEnnemie3");
-			global.levelEnded = true;
-			global.iLevelEnded++;
-			if(global.iLevelEnded = FPS * 5){
+		
+			//Countdown
+			if(++global.iLevelEnded = FPS * 5){
 				global.levelEnded = false;
 				global.iLevelEnded = 0;
 				room_goto(rCredit);

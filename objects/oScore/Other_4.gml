@@ -157,8 +157,9 @@ if(room == rCredit){
 	//Music
 	audio_play_sound(snCredit, 0, false);
 	
-	//Text
-	with(instance_create_layer(x, y, layer, oText)){
-		text = "~ Congratulations ~";
-	}
+	//Endless
+	global.gameEndless = true;
+	ini_open(OPTION);
+	ini_write_real("End", "Endless", global.gameEndless);
+	ini_close();
 }

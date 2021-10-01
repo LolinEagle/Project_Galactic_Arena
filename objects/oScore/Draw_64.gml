@@ -16,31 +16,11 @@ if(!global.gamePaused && room != room_first && room != room_last){
 		);
 	}else if(room = rBoss1 || room = rBoss2 || room = rBoss3){
 		//Boss
-		draw_sprite(sHudScore, 0, RES_W, 0);
-		if(global.theScore < 10){
-			draw_text(RES_W - 8, 0, "Score : 00" + string(global.theScore));
-		}
-		if(global.theScore >= 10 && global.theScore < 100){
-			draw_text(RES_W - 8, 0, "Score : 0" + string(global.theScore));
-		}
-		if(global.theScore >= 100){
-			draw_text(RES_W - 8, 0, "Score : " + string(global.theScore));
-		}
+		scHudScore();
 		scScorePacifisme();
 	}else if(room = rEndless){
 		//Endless
-		draw_sprite(sHudScore, 0, RES_W, 0);
-		if(global.theScore < 10){
-			draw_text(RES_W - 8, 0, "Score : 00" + string(global.theScore));
-		}
-		if(global.theScore >= 10 && global.theScore < 100){
-			draw_text(RES_W - 8, 0, "Score : 0" + string(global.theScore));
-		}
-		if(global.theScore >= 100){
-			draw_text(RES_W - 8, 0, "Score : " + string(global.theScore));
-		}
-		
-		//Pacifisme
+		scHudScore();
 		draw_set_font(fRoboto24);
 		if(global.theScore = 0){draw_set_colour(c_aqua);}
 		else{draw_set_colour(c_maroon);}
@@ -51,8 +31,7 @@ if(!global.gamePaused && room != room_first && room != room_last){
 				draw_text(
 					RES_W - 8, 48, _s1 + "0" + string(global.pacifismSec)
 				);
-			}
-			if(global.pacifismSec >= 10){
+			}else if(global.pacifismSec >= 10){
 				draw_text(
 					RES_W - 8, 48, _s1 + string(global.pacifismSec)
 				);
@@ -62,12 +41,12 @@ if(!global.gamePaused && room != room_first && room != room_last){
 		//Normal level
 		draw_sprite(sHudScore, 0, RES_W, 0);
 		var	_s = string(global.theScore) + " / " + string(scoreToPass);
-		if(global.theScore < 10){
-			draw_text(RES_W - 8, 0, "Score : 00" + _s);
-		}else if(global.theScore < 100){
-			draw_text(RES_W - 8, 0, "Score : 0" + _s);
-		}else{
+		if(global.theScore >= 100){
 			draw_text(RES_W - 8, 0, "Score : " + _s);
+		}else if(global.theScore >= 10 && global.theScore < 100){
+			draw_text(RES_W - 8, 0, "Score : 0" + _s);
+		}else if(global.theScore < 10){
+			draw_text(RES_W - 8, 0, "Score : 00" + _s);
 		}
 		
 		//Pacifisme
