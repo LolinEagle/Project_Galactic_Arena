@@ -6,3 +6,10 @@ Galactic Arena is an intense, fast-paced top-down shooter where your sole object
 ![image](https://github.com/user-attachments/assets/08e6fc2c-a457-4503-b537-8b698a8723b2)
 ![image](https://github.com/user-attachments/assets/116023ba-50f8-450b-ab3e-606c934d2886)
 ![image](https://github.com/user-attachments/assets/3ec5bb77-e6ba-456e-9ef4-4d057e609523)
+
+## Related project
+[Shoot Wave](https://github.com/LolinEagle/Project_Shoot_Wave)
+
+[Platformer](https://github.com/LolinEagle/Project_Platformer)
+
+[Echo](https://github.com/LolinEagle/Project_Echo)
